@@ -32,14 +32,13 @@ public class test001 {
 
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("headless");
-//
-//        options.addArguments("window-size=1200x600");
-//		driver = new ChromeDriver(options);
-//		
-//		
-		driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        options.addArguments("window-size=1366x768");
+		driver = new ChromeDriver(options);
+		
+		
+		//driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 
